@@ -1,3 +1,1 @@
-import { hola } from "./menu";
-
-hola();
+import './menu';
