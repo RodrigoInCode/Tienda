@@ -72,8 +72,23 @@ body{
     top: 15px;
     z-index: 100;
 }
-
-
+.list_item .list_show {
+    overflow: hidden;
+}
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid var(--color-linea);
+    transition: height .4s;
+    height: 0;
+  }
+  .list_shide{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    left: 35px;
+  }
+  
 /*----------------Barra Lateral*/
 .barra-lateral{
     position: fixed;
@@ -164,6 +179,7 @@ body{
     list-style: none;
     display: flex;
     margin-bottom: 5px;
+    flex-direction: column;
 }
 .barra-lateral .navegacion a{
     width: 100%;
@@ -239,12 +255,6 @@ body{
     border-radius: 50%;
     left: 2px;
     transition: left 0.5s ease;
-}
-.circulo{
-    transition: transform 0.5s;
-}
-.prendido{
-    transform: translateX(15px);
 }
 .barra-lateral .modo-oscuro .circulo.prendido{
     left: 15px;

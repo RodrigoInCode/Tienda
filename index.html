@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title>Super G</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" type="image/x-icon" href="src/imagenes/logo_sin_fondp.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </head>
 <body>
     <div class="menu">
@@ -16,28 +20,42 @@
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
-                <span>Apex</span>
+                <img src="src/imagenes/logo_sin_letras (1).png" alt="" id="cloud" width="50px" height="50px">
+                <span>Super G</span>
             </div>
-            <button class="boton">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>Create new</span>
-            </button>
+            
         </div>
 
         <nav class="navegacion">
             <ul>
                 <li>
                     <a id="inbox" href="#">
-                        <ion-icon name="mail-unread-outline"></ion-icon>
-                        <span>Inbox</span>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="star-outline"></ion-icon>
-                        <span>Starred</span>
-                    </a>
+                <li class="productos list_item">
+                    <div class="list_button list_button--click">
+                        <a href="#">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <span>Productos</span>
+                        </a>
+                    </div>
+                    
+                    <ul class="list_show dropdown-content-second">
+                        <li class="list_shide">
+                            <a href="">
+                                <ion-icon name="beer-outline"></ion-icon>
+                                Bebidas
+                            </a>
+                        </li>
+                        <li class="list_shide">
+                            <a href="">
+                                <ion-icon name="pizza-outline"></ion-icon>
+                                Abarrotes
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">
@@ -51,24 +69,8 @@
                         <span>Drafts</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                        <span>Important</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="alert-circle-outline"></ion-icon>
-                        <span>Spam</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="trash-outline"></ion-icon>
-                        <span>Trash</span>
-                    </a>
-                </li>
+                
+                
             </ul>
         </nav>
 
@@ -89,16 +91,7 @@
                 </div>
             </div>
     
-            <div class="usuario">
-                <img src="/Jhampier.jpg" alt="">
-                <div class="info-usuario">
-                    <div class="nombre-email">
-                        <span class="nombre">Jhampier</span>
-                        <span class="email">jhampier@gmail.com</span>
-                    </div>
-                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                </div>
-            </div>
+            
         </div>
 
     </div>
@@ -134,8 +127,6 @@
     </main>
 
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./public/bundle.js"></script>
 </body>
 </html>
