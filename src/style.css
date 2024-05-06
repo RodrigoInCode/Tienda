@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
 :root{
-    --color-barra-lateral:rgb(255,255,255);
+    --color-barra-lateral:rgb(247, 247, 247);
 
     --color-texto:rgb(0,0,0);
     --color-texto-menu:rgb(134,136,144);
@@ -52,7 +52,45 @@
 body{
     height: 100vh;
     width: 100%;
-    background-color: darkcyan;
+    background-color: rgb(226, 226, 226);
+}
+.contenedor_head{
+    width: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+.contenedor_head_texto p{
+    font-size: xx-large;
+    padding-left: 10px;
+}
+.contenedor_head_boton{
+    display: flex;
+    align-items: center;
+    width: 175px;
+    margin-left: 55px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: coral;
+    color: #fff;
+}
+.contenedor_head_boton span{
+    padding-right: 50px;
+}
+.contenedor_contenido{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 125px;
+}
+.typed{
+    font-weight: bold;
+    color: yellowgreen;
+    font-style: normal;
 }
 
 /*-----------------Menu*/
