@@ -4,7 +4,7 @@ const cloud = document.getElementById("cloud");
 const barraLateral = document.querySelector(".barra-lateral");
 const spans = document.querySelectorAll("span");
 const palanca = document.querySelector(".switch");
-const circulo = document.querySelector(".circulo");
+
 const menu = document.querySelector(".menu");
 const main = document.querySelector("main");
 
@@ -40,10 +40,11 @@ listElements.forEach(listElement => {
     });
 });
 palanca.addEventListener("click",()=>{
+    const circulo = document.querySelector(".circulo");
     let body = document.body;
     body.classList.toggle("dark-mode");
-    body.classList.toggle("");
     circulo.classList.toggle("prendido");
+    
 });
 
 cloud.addEventListener("click",()=>{
