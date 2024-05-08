@@ -26,9 +26,9 @@ menu.addEventListener("click",()=>{
         });
     }
 });
-let listElements$1 =document.querySelectorAll('.list_button--click');
+let listElements =document.querySelectorAll('.list_button--click');
 
-listElements$1.forEach(listElement => {
+listElements.forEach(listElement => {
     listElement.addEventListener('click',()=>{
         listElement.classList.toggle('arrow');
         let height=0;
@@ -259,29 +259,42 @@ function actualizarTotalCarrito(){
 
 }
 
-let listElements =document.querySelectorAll('.list_button--click');
+let slider= document.querySelector('.slider-contenedor');
+let sliderInd= document.querySelectorAll('.slider-test');
+let contador = 1;
+let tamañoWidth= sliderInd[0].clientWidth;
+let intervalo=2000;
 
-listElements.forEach(listElement => {
-    listElement.addEventListener('click',()=>{
-        listElement.classList.toggle('arrow');
-        let height=0;
-        let menu=listElement.nextElementSibling;
-        if (menu.clientHeight== "0") {
-            height=menu.scrollHeight;
-        }
-        menu.style.height=`${height}px`;
-    });
+window.addEventListener('resize',()=>{
+    sliderInd[0].clientWidth;
+
 });
-
-document.addEventListener('click', function(event) {
-    var menu = document.getElementById('menu');
-    var target = event.target;
-
-    var menuLeft = window.getComputedStyle(menu).getPropertyValue('left');
-
-    if (menuLeft !== '0px') {
-        console.log("no está abierto ;)");
-    } else if (target !== menu && !menu.contains(target)) {
-        menu.style.left = "-250px"; // Cerrar el menú
+setInterval(()=>{
+    slides();
+},intervalo);
+function slides() {
+    slider.style.transform =`translate(${-tamañoWidth*contador-1}px)`;
+    slider.style.transition=`transform 1s`;
+    if (contador===sliderInd.length-1) {
+        contador=-1;
+        setTimeout(()=>{
+            slider.style.transform =`translate(0px)`;
+            slider.style.transition=`transform 0s`;
+        }, intervalo);
     }
-});
+    contador++;
+}
+
+var map = L.map('map').setView([19.27194444, -99.60166667], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var latitud = 19.27194444;
+    var longitud = -99.60166667;
+    
+    // Agregar marcador al mapa
+    L.marker([latitud, longitud]).addTo(map)
+        .bindPopup('Aqui estamos ubicados')
+        .openPopup();

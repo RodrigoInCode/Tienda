@@ -18,6 +18,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   </head>
   <body>
     <div class="menu">
@@ -103,7 +104,7 @@
     </div>
 
     <main>
-      <div class="contenedor">
+      <div class="contenedor-main">
         <div class="contenedor_head">
           <img
             src="src/imagenes/logo_sin_letras (1).png"
@@ -134,16 +135,52 @@
           </div>
         </section>
         <section id="seccion2">
-          <div class="contenedor_comentarios">
-
+          <div class="contenedor-info">
+            <h3>Sobre Nosotros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+              Sit modi iste dolores architecto? Odio asperiores iure quibusdam itaque <br>
+              voluptas ad est reiciendis ipsum, pariatur, rerum nobis! Distinctio necessitatibus <br>
+              dolorum accusantium.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                Sit modi iste dolores architecto? Odio asperiores iure quibusdam itaque <br>
+                voluptas ad est reiciendis ipsum, pariatur, rerum nobis! Distinctio necessitatibus <br>
+                dolorum accusantium.</p>
+            <img src="./src/assets/compra_online.svg" id="imagen-info">
           </div>
         </section>
-        <section id="seccion3"></section>
-        <section id="seccion4"></section>
-        
+        <section id="seccion3">
+          <div class="contenedor_comentarios">
+            <div class="slider-contenedor">
+              <div class="slider-test">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nulla.</p>
+                <img src="./src/imagenes/imagen-comentario.jpg" alt="">
+                <h3>Nombre1</h3>
+              </div>
+              <div class="slider-test">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nulla.</p>
+                <img src="./src/imagenes/imagen-comentario.jpg" alt="">
+                <h3>Nombre2</h3>
+              </div>
+              <div class="slider-test">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nulla.</p>
+                <img src="./src/imagenes/imagen-comentario.jpg" alt="">
+                <h3>Nombre3</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="seccion4">
+          <div class="contenedor-map">
+            <h3>Nuestra Ubicacion</h3>
+            <div id="map" style="height: 800px;">
+
+            </div>
+          </div>
+        </section>
         </div>
       </div>
     </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./public/bundle.js"></script>
   </body>
