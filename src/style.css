@@ -21,19 +21,20 @@
     --color-scroll-hover:rgb(134,134,134);
     --color-typed:rgb(34, 41, 85);
     --color-fondo:rgb(242, 242, 242);
-    --color-letra-titulo:#F75143;
+    --color-letra-titulo:rgb(110, 147, 159);
+    --color-fondo-comentarios:#dddada;
 }
 
 .dark-mode{
-    --color-barra-lateral:rgb(44,45,49);
+    --color-barra-lateral:#001524;
 
     --color-texto:rgb(255,255,255);
-    --color-texto-menu:rgb(110,110,117);
+    --color-texto-menu:#ffecd1;
 
     --color-menu-hover:rgb(0,0,0);
     --color-menu-hover-texto:rgb(238,238,238);
 
-    --color-boton:rgb(255,255,255);
+    --color-boton:#f1a208;
     --color-boton-texto:rgb(0,0,0);
 
     --color-linea:rgb(90,90,90);
@@ -43,9 +44,10 @@
 
     --color-scroll:rgb(68,69,74);
     --color-scroll-hover:rgb(85,85,85);
-    --color-typed:#FFD700 ;
-    --color-fondo:#1d2149;
-    --color-letra-titulo:#1D1D1D;
+    --color-typed:#ff7d00 ;
+    --color-fondo:#001d3d;
+    --color-letra-titulo:#BDA678;
+    --color-fondo-comentarios:#013a63;
 }
 
 
@@ -136,17 +138,20 @@ body{
     
 }
 .contenedor_comentarios{
+    color: var(--color-texto);
     display: flex;
     width: 80%;
     height: 400px;
     overflow: hidden;
     margin: auto;
+    background-color: var(--color-fondo-comentarios);
 }
 .slider-test img{
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 100%;
+    
 }
 .slider-contenedor{
     display: flex;
@@ -155,6 +160,7 @@ body{
     align-items: center;
 }
 .contenedor_comentarios p{
+    
     text-align: center;
     font-style: italic;
 }
@@ -166,6 +172,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+    border: #1d2149 solid 2px;
 }
 #seccion2{
     font-size: x-large;
@@ -173,14 +180,19 @@ body{
 
 }
 .contenedor-info{
+    color: var(--color-texto);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 50px;
 }
 .contenedor-info img{
     
     height: 500px;
     width: 500px;
+}
+.contenedor-map{
+    color: var(--color-texto);
 }
 /*-----------------Menu*/
 .menu{

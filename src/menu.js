@@ -4,7 +4,7 @@ const cloud = document.getElementById("cloud");
 const barraLateral = document.querySelector(".barra-lateral");
 const spans = document.querySelectorAll("span");
 const palanca = document.querySelector(".switch");
-
+const navegacion = document.querySelector(".navegacion");
 const menu = document.querySelector(".menu");
 const main = document.querySelector("main");
 
