@@ -4,7 +4,7 @@ const cloud = document.getElementById("cloud");
 const barraLateral = document.querySelector(".barra-lateral");
 const spans = document.querySelectorAll("span");
 const palanca = document.querySelector(".switch");
-
+document.querySelector(".navegacion");
 const menu = document.querySelector(".menu");
 const main = document.querySelector("main");
 
@@ -294,7 +294,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     var latitud = 19.27194444;
     var longitud = -99.60166667;
     
-    // Agregar marcador al mapa
+    
     L.marker([latitud, longitud]).addTo(map)
         .bindPopup('Aqui estamos ubicados')
         .openPopup();

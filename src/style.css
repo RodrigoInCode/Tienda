@@ -187,13 +187,13 @@ body{
     margin-left: 50px;
 }
 .contenedor-info img{
-    
     height: 500px;
     width: 500px;
 }
-.contenedor-map{
+#seccion4{
     color: var(--color-texto);
 }
+
 /*-----------------Menu*/
 .menu{
     position: fixed;

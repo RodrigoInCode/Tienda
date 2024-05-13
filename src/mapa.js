@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     var latitud = 19.27194444;
     var longitud = -99.60166667;
     
-    // Agregar marcador al mapa
+    
     L.marker([latitud, longitud]).addTo(map)
         .bindPopup('Aqui estamos ubicados')
         .openPopup();
