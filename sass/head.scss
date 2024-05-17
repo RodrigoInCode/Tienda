@@ -1,0 +1,29 @@
+.contenedor_head{
+    color: var(--color-texto);
+    width: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+.contenedor_head_texto p{
+    color:var(--color-letra-titulo);
+    font-size: xx-large;
+    padding-left: 10px;
+}
+.contenedor_head_boton{
+    display: flex;
+    align-items: center;
+    width: 175px;
+    margin-left: 55px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+}
+.contenedor_head_boton span{
+    color:var(--color-boton-texto);
+    padding-right: 50px;
+}

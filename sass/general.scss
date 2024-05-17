@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-fondo);
+}
+#seccion4{
+    color: var(--color-texto);
+}
+#seccion1,#seccion2,#seccion4{
+    height: 800px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+#seccion3{
+    height: 800px;
+}
