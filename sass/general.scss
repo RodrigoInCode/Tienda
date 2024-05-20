@@ -11,14 +11,18 @@ body{
     width: 100%;
     background-color: var(--color-fondo);
 }
+.contenedor_main{
+    display: flex;
+    flex-wrap: wrap;
+}
 #seccion4{
     color: var(--color-texto);
 }
-#seccion1,#seccion2,#seccion4{
-    height: 800px;
-    margin-bottom: 50px;
-    padding: 10px;
-}
-#seccion3{
-    height: 800px;
-}
+// #seccion1,#seccion2,#seccion4{
+//     height: 800px;
+//     margin-bottom: 50px;
+//     padding: 10px;
+// }
+// #seccion3{
+//     height: 800px;
+// }

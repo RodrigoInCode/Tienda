@@ -3,14 +3,15 @@
     width: 100vh;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     z-index: 99;
 }
 
 .contenedor_head_texto p{
     color:var(--color-letra-titulo);
-    font-size: xx-large;
+    font-size: 1.5rem;
     padding-left: 10px;
 }
 .contenedor_head_boton{
@@ -25,5 +26,12 @@
 }
 .contenedor_head_boton span{
     color:var(--color-boton-texto);
-    padding-right: 50px;
+    margin-right: 50px;
+    font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+    .contenedor_head {
+        display: none;
+    }
+
 }
