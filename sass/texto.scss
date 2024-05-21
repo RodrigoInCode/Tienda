@@ -29,10 +29,27 @@
     border-radius: 15px;
 }
 .parrafo_contenido{
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 .boton_contenido span{
     color: var(--color-boton-texto);
     font-size: 30px;
     
+}
+#seccion2{
+    font-size: x-large;
+    padding-top: 30px;
+
+}
+.contenedor-info{
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+.contenedor-info img{
+    height: auto;
+    width: 100%;
 }

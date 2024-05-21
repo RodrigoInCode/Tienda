@@ -45,7 +45,7 @@
             <section id="seccion2">
                 <div class="contenedor-info" id="info">
                     <h3>Sobre Nosotros</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                         Sit modi iste dolores architecto? Odio asperiores iure quibusdam itaque <br>
                         voluptas ad est reiciendis ipsum, pariatur, rerum nobis! Distinctio necessitatibus <br>
                         dolorum accusantium.
@@ -91,6 +91,7 @@
     </main>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="src\typed.js"></script>
     <script src="./public/bundle.js"></script>
 </body>
 
