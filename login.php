@@ -14,7 +14,7 @@
         include('layout/menu.php')
     ?> -->
     <div class="contenedor__formulario">
-    <form action="" class="formulario" id="formulario">
+    <form action="" class="formulario" id="formulario" method="$_POST">
         <!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
@@ -78,7 +78,6 @@
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
     </form>
-    </div>
     <script src="src/login.js"></script>
     <!-- <script src="src\menu.js"></script> -->
 </body>
