@@ -127,28 +127,38 @@ formulario.addEventListener("submit", (e) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data); 
-        document
-          .getElementById("formulario__mensaje-exito")
-          .classList.add("formulario__mensaje-exito-activo");
-        setTimeout(() => {
+        console.log(data);
+        if (data.success) {
           document
             .getElementById("formulario__mensaje-exito")
-            .classList.remove("formulario__mensaje-exito-activo");
-        }, 5000);
+            .classList.add("formulario__mensaje-exito-activo");
+          setTimeout(() => {
+            document
+              .getElementById("formulario__mensaje-exito")
+              .classList.remove("formulario__mensaje-exito-activo");
+          }, 5000);
 
-        document
-          .querySelectorAll(".formulario__grupo-correcto")
-          .forEach((icono) => {
-            icono.classList.remove("formulario__grupo-correcto");
-          });
+          document
+            .querySelectorAll(".formulario__grupo-correcto")
+            .forEach((icono) => {
+              icono.classList.remove("formulario__grupo-correcto");
+            });
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
         alert("Ocurrió un error al enviar el formulario");
+        document.getElementById("formulario__mensaje").textContent =
+          "Error: Intentelo mas Tarde";
+        setTimeout(() => {
+            document.getElementById("formulario__mensaje")
+            .classList.add("formulario__mensaje-activo");
+        }, 5000);
       });
     // formulario.reset();
   } else {
+    document.getElementById("formulario__mensaje").textContent =
+      "Error: Por favor rellena el formulario correctamente.";
     document
       .getElementById("formulario__mensaje")
       .classList.add("formulario__mensaje-activo");

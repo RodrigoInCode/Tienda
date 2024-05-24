@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
+$respuesta = array('success' => false, 'mensaje' => '');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $usuario = $_POST['usuario'];
@@ -17,7 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     
     if (empty($usuario) || empty($nombre) || empty($password) || empty($correo) || empty($telefono)) {
-        echo json_encode(['message' => 'Todos los datos obligatorios']);
+        $respuesta['mensaje'] = "Todos los datos son los obligatorios";
+        echo json_encode($respuesta);
+        exit;
     }
 
     
@@ -26,15 +28,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $stmt = $conex->prepare("INSERT INTO `usuarios`(`usuario`, `nombre`, `correo_electronico`, `contrasena`, `numero_telefono`) VALUES (?, ?, ?, ?, ?)");
     if ($stmt === false) {
-        die("Error al preparar la consulta: " . $conex->error);
-        echo json_encode(['message' => 'Error al preparar la consulta:', 'error' => $conex->error]);
+        $respuesta['mensaje'] = "Error_al_preparar_la_consulta:" . $conex->error;
+        echo json_encode($respuesta);
     }
-    $stmt->bind_param("sssss", $usuario, $nombre, $correo, $password_hash, $telefono);
+    if ($stmt) {
+        $stmt->bind_param("sssss", $usuario, $nombre, $correo, $password_hash, $telefono);
+    }
 
     if ($stmt->execute()) {
-        echo json_encode(['message' => 'Formulario recibido con exito', 'usuario' => $usuario, 'nombre' => $nombre, 'correo' => $correo, 'telefono' => $telefono]);
+        
+        $respuesta['mensaje'] = "Formulario_recibido_con_exito";
+        $respuesta['success']=true;
     } else {
-        echo json_encode(['Error: ' => $stmt->error]);
+       
+        $respuesta['mensaje']= "Error:".$stmt->error;
     }
 
     $stmt->close();
@@ -43,4 +50,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "Método de solicitud no válido.";
     echo json_encode(['message'=> 'Método de solicitud no válido']);
 }
+echo json_encode($respuesta);
 ?>
