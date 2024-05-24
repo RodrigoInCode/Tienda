@@ -120,12 +120,12 @@ formulario.addEventListener("submit", (e) => {
     campos.telefono
   ) {
     const formData = new FormData(formulario);
-
+    console.log(formData);
     fetch("dataBase/agregarUsuario.php", {
       method: "POST",
       body: formData,
     })
-      .then((response) => response.text())
+      .then((response) => response.json())
       .then((data) => {
         console.log(data); 
         document
@@ -147,7 +147,7 @@ formulario.addEventListener("submit", (e) => {
         console.error("Error:", error);
         alert("Ocurrió un error al enviar el formulario");
       });
-    formulario.reset();
+    // formulario.reset();
   } else {
     document
       .getElementById("formulario__mensaje")

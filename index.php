@@ -25,7 +25,11 @@
                 </div>
                 <div class="contenedor_head_boton">
                     <span>Contactanos</span>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <img src="src\assets\arrow-forward-outline.svg" height="15px" width="15px">
+                </div>
+                <div class="contenedor_head_secion">
+                    <span><a href="login.php">Iniciar Seción</a></span>
+                    <img src="src\assets\arrow-forward-outline.svg" height="15px" width="15px">
                 </div>
             </div>
             <section id="seccion1">
