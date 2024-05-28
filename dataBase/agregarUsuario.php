@@ -9,30 +9,24 @@ error_reporting(E_ALL);
 $respuesta = array('success' => false, 'mensaje' => '');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $usuario = $_POST['usuario'];
+    // $usuario = $_POST['usuario'];
     $nombre = $_POST['nombre'];
     $password = $_POST['password'];
     $correo = $_POST['correo'];
     $telefono = $_POST['telefono'];
 
     
-    if (empty($usuario) || empty($nombre) || empty($password) || empty($correo) || empty($telefono)) {
-        $respuesta['mensaje'] = "Todos los datos son los obligatorios";
-        echo json_encode($respuesta);
-        exit;
-    }
-
+    
     
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     
-    $stmt = $conex->prepare("INSERT INTO `usuarios`(`usuario`, `nombre`, `correo_electronico`, `contrasena`, `numero_telefono`) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conex->prepare("INSERT INTO `usuarios`(`nombre`, `correo_electronico`, `contrasena`, `numero_telefono`) VALUES (?, ?, ?, ?)");
     if ($stmt === false) {
         $respuesta['mensaje'] = "Error_al_preparar_la_consulta:" . $conex->error;
         echo json_encode($respuesta);
-    }
-    if ($stmt) {
-        $stmt->bind_param("sssss", $usuario, $nombre, $correo, $password_hash, $telefono);
+    }else {
+        $stmt->bind_param("ssss",$nombre, $correo, $password_hash, $telefono);
     }
 
     if ($stmt->execute()) {
