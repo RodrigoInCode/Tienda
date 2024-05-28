@@ -1,0 +1,45 @@
+.contenedor-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Añadido para separación entre secciones */
+}
+
+.flecha-izquierda, .flecha-derecha {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.flecha-izquierda {
+    left: 0;
+}
+
+.flecha-derecha {
+    right: 0;
+}
+
+.contenedor-items {
+    display: flex;
+    overflow: hidden; /* Ocultar la barra de desplazamiento */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item {
+    flex: 0 0 auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.img-item {
+    max-width: 100%;
+    height: auto;
+}
