@@ -35,7 +35,7 @@
             <section id="seccion1">
                 <div class="contenedor_contenido">
                     <p>
-                        Todo lo que buscas, <br />
+                        Todo lo que buscas, <br/>
                         <span class="typed"></span>
                     </p>
                     <div class="parrafo_contenido">
@@ -95,7 +95,7 @@
     </main>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="src\typed.js"></script>
+
     <script src="./public/bundle.js"></script>
 </body>
 
