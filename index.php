@@ -49,14 +49,13 @@
             <section id="seccion2">
                 <div class="contenedor-info" id="info">
                     <h3>Sobre Nosotros</h3>
-                    <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                        Sit modi iste dolores architecto? Odio asperiores iure quibusdam itaque <br>
-                        voluptas ad est reiciendis ipsum, pariatur, rerum nobis! Distinctio necessitatibus <br>
-                        dolorum accusantium.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                        Sit modi iste dolores architecto? Odio asperiores iure quibusdam itaque <br>
-                        voluptas ad est reiciendis ipsum, pariatur, rerum nobis! Distinctio necessitatibus <br>
-                        dolorum accusantium.</p>
+                    <p><br>Somos 3 alumnos de la escuela de colegios de estudios cientificos
+                      y tecnologicos del estado de mexico, que tuvo como este proyecto 
+                     para crar esta pagina web que prodia ayudar a la escuela para los alumnos
+                     en la parte de comprar afuera o ayudarles en poder tener algo para comer o beber
+                     en el recreo, para que asi puedan anticipar lo que puedan querer y no esperar una gran fila.
+                     Asi podemos mejorar nuestra pagina web, de parte de dual :3
+                      </p>
                     <img src="./src/assets/compra_online.svg" id="imagen-info">
                 </div>
             </section>
