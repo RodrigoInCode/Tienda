@@ -49,12 +49,10 @@
             <section id="seccion2">
                 <div class="contenedor-info" id="info">
                     <h3>Sobre Nosotros</h3>
-                    <p><br>Somos 3 alumnos de la escuela de colegios de estudios cientificos
-                      y tecnologicos del estado de mexico, que tuvo como este proyecto 
-                     para crar esta pagina web que prodia ayudar a la escuela para los alumnos
-                     en la parte de comprar afuera o ayudarles en poder tener algo para comer o beber
-                     en el recreo, para que asi puedan anticipar lo que puedan querer y no esperar una gran fila.
-                     Asi podemos mejorar nuestra pagina web, de parte de dual :3
+                    <p><br>Soy una tienda de abarrotes que esta desde hace ""
+                       y que tenemos una variedad de productos, el encargado que es el dueño 
+                       de la tienda se llama Gerardo.Cuando hat un pedido cierra la tienda poco tiempo hasta
+                       que entregue el producto y el tiene la politica de que hoy no fia mañana si.
                       </p>
                     <img src="./src/assets/compra_online.svg" id="imagen-info">
                 </div>

@@ -56,7 +56,29 @@
       </li>
     </ul>
   </nav>
+  <li class="productos list_item">
+        <div class="list_button list_button--click">
+          <a href="#">
+            <ion-icon name=></ion-icon>
+            <span>info. de los desarrolladores</span>
+          </a>
+        </div>
 
+        <ul class="list_show dropdown-content-second">
+          <li class="list_shide">
+            <a href="Desarroladores.html">
+              <ion-icon name=></ion-icon>
+              Desarroladores
+            </a>
+          </li>
+          <li class="list_shide">
+            <a href="catalogoComida.html">
+              <ion-icon name=></ion-icon>
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </li>
   <div>
     <div class="linea"></div>
 
