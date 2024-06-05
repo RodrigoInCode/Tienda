@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <script src="src/registro.js"></script>
+    <script src="C:\Users\Erik\Documents\escuela dual\tienda\Tienda-1\registro.php"></script>
 </body>
 
 </html>

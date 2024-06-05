@@ -35,11 +35,11 @@
             <section id="seccion1">
                 <div class="contenedor_contenido">
                     <p>
-                        Todo lo que buscas, <br/>
-                        <span class="typed"></span>
+                       <span class="Tlqb"> Todo lo que buscas,<span> </br>
+                        <span class="typed "></span>
                     </p>
                     <div class="parrafo_contenido">
-                        Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Numquam, beatae!
+                     
                     </div>
                     <div class="boton_contenido">
                         <span>Pide ya</span>
