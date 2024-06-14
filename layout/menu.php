@@ -21,28 +21,11 @@
       </li>
       <li class="productos list_item">
         <div class="list_button list_button--click">
-          <a href="#">
+          <a href="catalogo2.html">
             <ion-icon name="fast-food-outline"></ion-icon>
             <span>Productos</span>
           </a>
         </div>
-
-        <ul class="list_show dropdown-content-second">
-          <li class="list_shide">
-            <a href="catalogo.php">
-              <ion-icon name="beer-outline"></ion-icon>
-              Bebidas
-            </a>
-          </li>
-          <li class="list_shide">
-            <a href="catalogoComida.html">
-              <ion-icon name="pizza-outline"></ion-icon>
-              Abarrotes
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
         <a href="#info">
           <ion-icon name="paper-plane-outline"></ion-icon>
           <span>Sobre nosotros</span>
@@ -55,30 +38,15 @@
         </a>
       </li>
     </ul>
-  </nav>
+    
   <li class="productos list_item">
         <div class="list_button list_button--click">
-          <a href="#">
+          <a href="Desarroladores.html">
             <ion-icon name=></ion-icon>
-            <span>info. de los desarrolladores</span>
+            <span>Desalloradores</span>
           </a>
         </div>
-
-        <ul class="list_show dropdown-content-second">
-          <li class="list_shide">
-            <a href="Desarroladores.html">
-              <ion-icon name=></ion-icon>
-              Desarroladores
-            </a>
-          </li>
-          <li class="list_shide">
-            <a href="catalogoComida.html">
-              <ion-icon name=></ion-icon>
-              Contacto
-            </a>
-          </li>
-        </ul>
-      </li>
+</nav>
   <div>
     <div class="linea"></div>
 
