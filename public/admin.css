@@ -65,9 +65,9 @@ body {
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
-#sidebar::--webkit-scrollbar {
+/* #sidebar::--webkit-scrollbar {
 	display: none;
-}
+} */
 #sidebar.hide {
 	width: 60px;
 }
@@ -432,6 +432,21 @@ body {
 	margin-right: auto;
 	font-size: 24px;
 	font-weight: 600;
+}
+#content main .table-data .head input{
+	height: 100%;
+	padding: 0 16px;
+	border-radius: 8px;
+	border: none;
+	background: var(--grey);
+	outline: none;
+	transition: width 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+#content main .table-data .head input.activo{
+	width: 200px;
+    padding: 5px 10px;
+    opacity: 1;
 }
 #content main .table-data .head .bx {
 	cursor: pointer;

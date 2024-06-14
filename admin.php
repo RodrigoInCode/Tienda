@@ -55,22 +55,22 @@
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
-						<h3>1020</h3>
-						<p>New Order</p>
+						<h3 id="nuevasOrdenes"></h3>
+						<p>Ordenes Pendientes</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bxs-group' ></i>
 					<span class="text">
 						<h3>2834</h3>
-						<p>Visitors</p>
+						<p>Visitantes</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
 					<span class="text">
-						<h3>$2543</h3>
-						<p>Total Sales</p>
+						<h3 id="ventasTotales"></h3>
+						<p>Ventas Totales</p>
 					</span>
 				</li>
 			</ul>
@@ -80,19 +80,20 @@
 				<div class="order">
 					<div class="head">
 						<h3>Recent Orders</h3>
-						<i class='bx bx-search' ></i>
+						<input type="text" name="campo" id="campo" placeholder="Buscar...">
+						<i class='bx bx-search' id="search-icon"></i>
 						<i class='bx bx-filter' ></i>
 					</div>
-					<table>
+					<table id="pedidosTable">
 						<thead>
 							<tr>
-								<th>User</th>
-								<th>Date Order</th>
-								<th>Status</th>
+								<th>Usuario</th>
+								<th>Fecha de la orden</th>
+								<th>Estado</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
+						<tbody id="contentTable">
+							<!-- <tr>
 								<td>
 									<img src="img/people.png">
 									<p>John Doe</p>
@@ -131,7 +132,8 @@
 								</td>
 								<td>01-10-2021</td>
 								<td><span class="status completed">Completed</span></td>
-							</tr>
+							</tr> -->
+
 						</tbody>
 					</table>
 				</div>
