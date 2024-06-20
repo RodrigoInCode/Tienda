@@ -12,12 +12,8 @@
 </head>
 
 <body>
-    <?php
-    include('./layout/menu.php');
-    ?>
-    <header>
-        <h1>Bebidas</h1>
-    </header>
+    
+    
 
 
     <section class="contenedor">
